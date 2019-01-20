@@ -1,3 +1,3 @@
-#Baekjoon Algorithm
+Baekjoon Algorithm
 
-##Problem Solving
+Problem Solving
