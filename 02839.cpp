@@ -1,22 +1,29 @@
 #include <iostream>
 using namespace std;
-int main()
-{    int N, count=0;
-    cout<<"Amount of sugar(kilogram)?: ";
+
+int main(void) {
+    int N;
+    int count3=0;
+    
     cin>>N;
     
-    while(1) {
-        if(N%5 == 0){
-            cout<<N/5+count<<endl;
-            break;
+    if(N%5 == 0)
+        cout<<N/5<<endl;
+    else {
+        while(N >= 0){
+            count3++;
+            N = N-3;
+            if(N%5 == 0){
+                cout<<count3 + (N/5)<<endl;
+                return 0;
+            }
         }
-        else if(N <= 0){
+        if(N==0)
+            cout<<count3++<<endl;
+        else if(N<0)
             cout<<-1<<endl;
-            break;
-        }
-        N = N-3;
-        count++;  
     }
+            
     
     return 0;
 }
