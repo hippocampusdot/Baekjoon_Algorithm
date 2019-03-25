@@ -4,7 +4,7 @@ using namespace std;
 
 int main(void) {
 	ios::sync_with_stdio(false);
-	int num, num_cp;
+	int num;
 	int n;
 	int sum=0;
 
